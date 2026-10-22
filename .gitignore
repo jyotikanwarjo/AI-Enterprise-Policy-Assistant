@@ -1,0 +1,28 @@
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python environments and cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Local databases, embeddings and generated knowledge data
+Knowledge/chroma_db/
+Knowledge/chunks.json
+
+# Policy documents - do not publish without confirming they are safe
+Documents/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

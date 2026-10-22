@@ -1,0 +1,90 @@
+[
+    {
+        "id": "T01",
+        "question": "What approvals are required for privileged access in 2026?",
+        "expected_sources": [
+            "Access_Management_Policy_2026.pdf"
+        ],
+        "expected_keywords": [
+            "manager",
+            "application-owner",
+            "security review"
+        ],
+        "expected_behavior": "answer"
+    },
+    {
+        "id": "T02",
+        "question": "How often should standard access be reviewed?",
+        "expected_sources": [
+            "Access_Management_Policy_2026.pdf"
+        ],
+        "expected_keywords": [
+            "annual"
+        ],
+        "expected_behavior": "answer"
+    },
+    {
+        "id": "T03",
+        "question": "What happens when an employee leaves the company?",
+        "expected_sources": [
+            "Employee_Lifecycle_SOP.pdf"
+        ],
+        "expected_keywords": [
+            "access",
+            "revocation"
+        ],
+        "expected_behavior": "answer"
+    },
+    {
+        "id": "T04",
+        "question": "What are the differences between the 2025 and 2026 access policies?",
+        "expected_sources": [
+            "Access_Management_Policy_2025.pdf",
+            "Access_Management_Policy_2026.pdf"
+        ],
+        "expected_keywords": [
+            "security review",
+            "authentication",
+            "exception"
+        ],
+        "expected_behavior": "answer"
+    },
+    {
+        "id": "T05",
+        "question": "What is the company's travel reimbursement limit?",
+        "expected_sources": [],
+        "expected_keywords": [],
+        "expected_behavior": "abstain"
+    },
+    {
+        "id": "T06",
+        "question": "What is the emergency change management process?",
+        "expected_sources": [
+            "Change_Management_Policy.pdf"
+        ],
+        "expected_keywords": [
+            "emergency",
+            "change"
+        ],
+        "expected_behavior": "answer"
+    },
+    {
+        "id": "T07",
+        "question": "What should employees do if their VPN stops working?",
+        "expected_sources": [
+            "Remote_Work_VPN_Policy.pdf"
+        ],
+        "expected_keywords": [
+            "VPN",
+            "troubleshooting"
+        ],
+        "expected_behavior": "answer"
+    },
+    {
+        "id": "T08",
+        "question": "Which hotel should employees book when travelling?",
+        "expected_sources": [],
+        "expected_keywords": [],
+        "expected_behavior": "abstain"
+    }
+]
