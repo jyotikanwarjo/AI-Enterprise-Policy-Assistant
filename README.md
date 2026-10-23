@@ -170,27 +170,77 @@ The file list above describes the principal project files. Update it if your act
 
 1\. Install Python and create a virtual environment.
 
-2\. Install the project's required Python packages.
-
-3\. Create a `.env` file containing your own Gemini API key.
-
-4\. Place your permitted test policy PDFs in the `Documents` folder.
-
-5\. Ensure the knowledge chunks and metadata have been generated.
-
-6\. Run the application:
+2\. Install the required Python packages:
 
 
 
-```bash
+&#x20;  ```bash
 
-streamlit run app.py
+&#x20;  pip install -r requirements.txt
 
-```
+&#x20;  ```
 
 
 
-Keep API keys and confidential documents out of public repositories.
+3\. Create a `.env` file in the project root and add your Gemini API key:
+
+
+
+&#x20;  ```text
+
+&#x20;  GEMINI\_API\_KEY=your\_gemini\_api\_key
+
+&#x20;  ```
+
+
+
+4\. Place permitted test policy PDFs in the `Documents/` folder.
+
+5\. Generate knowledge chunks and metadata:
+
+
+
+&#x20;  ```bash
+
+&#x20;  python document\_processor.py
+
+&#x20;  ```
+
+
+
+&#x20;  This creates `Knowledge/chunks.json` from the PDFs.
+
+
+
+6\. Build the ChromaDB vector store:
+
+
+
+&#x20;  ```bash
+
+&#x20;  python embedding\_store.py
+
+&#x20;  ```
+
+
+
+&#x20;  This generates embeddings for the chunks and stores them in `Knowledge/chroma\_db/`. A valid Gemini API key and internet access are required.
+
+
+
+7\. Start the application:
+
+
+
+&#x20;  ```bash
+
+&#x20;  streamlit run app.py
+
+&#x20;  ```
+
+
+
+Keep API keys and confidential documents out of public repositories. Use only policy documents you are permitted to process and share.
 
 
 
